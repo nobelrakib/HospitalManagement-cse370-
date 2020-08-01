@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\MySqlProject\\MySqlProject\\MySqlProject.csproj": {}
+    "G:\\HospitalManagement(Cse370)\\MySqlProject\\MySqlProject\\MySqlProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\MySqlProject\\MySqlProject\\MySqlProject.csproj": {
+    "G:\\HospitalManagement(Cse370)\\MySqlProject\\MySqlProject\\MySqlProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\MySqlProject\\MySqlProject\\MySqlProject.csproj",
+        "projectUniqueName": "G:\\HospitalManagement(Cse370)\\MySqlProject\\MySqlProject\\MySqlProject.csproj",
         "projectName": "MySqlProject",
-        "projectPath": "C:\\Users\\User\\source\\repos\\MySqlProject\\MySqlProject\\MySqlProject.csproj",
+        "projectPath": "G:\\HospitalManagement(Cse370)\\MySqlProject\\MySqlProject\\MySqlProject.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\MySqlProject\\MySqlProject\\obj\\",
+        "outputPath": "G:\\HospitalManagement(Cse370)\\MySqlProject\\MySqlProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

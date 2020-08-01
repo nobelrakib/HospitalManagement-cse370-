@@ -48,15 +48,15 @@ namespace MySqlProject
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            var product = new Product()
-            {
-              //  Id = 4,
-                Name="football2"
-            };
-            var options = new DbContextOptions<TestContext>();
-            var context = new TestContext(options);
-            context.Products.Add(product);
-            context.SaveChanges();
+            //var product = new Product()
+            //{
+            //  //  Id = 4,
+            //    Name="football2"
+            //};
+            //var options = new DbContextOptions<TestContext>();
+            //var context = new TestContext(options);
+            //context.Products.Add(product);
+            //context.SaveChanges();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
