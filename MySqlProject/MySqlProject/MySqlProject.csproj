@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-MySqlProject-D038D28B-8737-421F-AA19-1ADF06383DD5</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20200730200314_xyz.cs" />
+    <Compile Remove="Data\Migrations\20200730200314_xyz.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200731044147_cv.cs" />
+    <Compile Remove="Data\Migrations\20200731044147_cv.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200731044400_cv.cs" />
+    <Compile Remove="Data\Migrations\20200731044400_cv.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200731044718_cv.cs" />
+    <Compile Remove="Data\Migrations\20200731044718_cv.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200731045611_cv.cs" />
+    <Compile Remove="Data\Migrations\20200731045611_cv.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200731074809_cv.cs" />
+    <Compile Remove="Data\Migrations\20200731074809_cv.Designer.cs" />
+    <Compile Remove="Migrations\ApplicationDb\20200731080844_cv2.cs" />
+    <Compile Remove="Migrations\ApplicationDb\20200731080844_cv2.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\FrontEnd\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\FrontEnd\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\FrontEnd\fonts\fontello.svg" />
+    <None Include="wwwroot\FrontEnd\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\FrontEnd\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\FrontEnd\images\icons.svg" />
+    <None Include="wwwroot\FrontEnd\js\bootstrap.js" />
+    <None Include="wwwroot\FrontEnd\js\cbpFWTabs.js" />
+    <None Include="wwwroot\FrontEnd\js\easing.js" />
+    <None Include="wwwroot\FrontEnd\js\jarallax.js" />
+    <None Include="wwwroot\FrontEnd\js\JiSlider.js" />
+    <None Include="wwwroot\FrontEnd\js\jquery-2.2.3.min.js" />
+    <None Include="wwwroot\FrontEnd\js\jquery-ui.js" />
+    <None Include="wwwroot\FrontEnd\js\jquery.countup.js" />
+    <None Include="wwwroot\FrontEnd\js\jquery.flexslider.js" />
+    <None Include="wwwroot\FrontEnd\js\jquery.swipebox.min.js" />
+    <None Include="wwwroot\FrontEnd\js\jquery.waypoints.min.js" />
+    <None Include="wwwroot\FrontEnd\js\modernizr-2.6.2.min.js" />
+    <None Include="wwwroot\FrontEnd\js\move-top.js" />
+    <None Include="wwwroot\FrontEnd\js\numscroller-1.0.js" />
+    <None Include="wwwroot\FrontEnd\js\SmoothScroll.min.js" />
+    <None Include="wwwroot\FrontEnd\js\wickedpicker.js" />
+    <None Include="wwwroot\FrontEnd\js\ziehharmonika.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\Migrations\" />
+  </ItemGroup>
+
+</Project>
