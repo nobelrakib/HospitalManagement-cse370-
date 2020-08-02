@@ -14,6 +14,6 @@ namespace MySqlProject.Data
         {
 
         }
-       // public DbSet<Product> Products { get; set; }
+       
     }
 }
