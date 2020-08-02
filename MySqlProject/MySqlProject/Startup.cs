@@ -73,6 +73,9 @@ namespace MySqlProject
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
+                endpoints.MapControllerRoute(
+                   name: "areas",
+                   pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
             });
         }
     }
