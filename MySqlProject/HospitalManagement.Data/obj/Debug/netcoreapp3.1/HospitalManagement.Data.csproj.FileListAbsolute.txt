@@ -1,0 +1,5 @@
+G:\HospitalManagement(Cse370)\MySqlProject\HospitalManagement.Data\bin\Debug\netcoreapp3.1\HospitalManagement.Data.deps.json
+G:\HospitalManagement(Cse370)\MySqlProject\HospitalManagement.Data\bin\Debug\netcoreapp3.1\HospitalManagement.Data.dll
+G:\HospitalManagement(Cse370)\MySqlProject\HospitalManagement.Data\obj\Debug\netcoreapp3.1\HospitalManagement.Data.csprojAssemblyReference.cache
+G:\HospitalManagement(Cse370)\MySqlProject\HospitalManagement.Data\obj\Debug\netcoreapp3.1\HospitalManagement.Data.AssemblyInfoInputs.cache
+G:\HospitalManagement(Cse370)\MySqlProject\HospitalManagement.Data\obj\Debug\netcoreapp3.1\HospitalManagement.Data.AssemblyInfo.cs
