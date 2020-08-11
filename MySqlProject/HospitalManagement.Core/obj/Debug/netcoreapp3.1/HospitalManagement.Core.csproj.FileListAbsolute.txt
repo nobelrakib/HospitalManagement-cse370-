@@ -1,0 +1,12 @@
+G:\HospitalManagement(Cse370)\MySqlProject\HospitalManagement.Core\bin\Debug\netcoreapp3.1\HospitalManagement.Core.deps.json
+G:\HospitalManagement(Cse370)\MySqlProject\HospitalManagement.Core\bin\Debug\netcoreapp3.1\HospitalManagement.Core.dll
+G:\HospitalManagement(Cse370)\MySqlProject\HospitalManagement.Core\bin\Debug\netcoreapp3.1\HospitalManagement.Core.pdb
+G:\HospitalManagement(Cse370)\MySqlProject\HospitalManagement.Core\bin\Debug\netcoreapp3.1\HospitalManagement.Data.dll
+G:\HospitalManagement(Cse370)\MySqlProject\HospitalManagement.Core\bin\Debug\netcoreapp3.1\HospitalManagement.Data.pdb
+G:\HospitalManagement(Cse370)\MySqlProject\HospitalManagement.Core\obj\Debug\netcoreapp3.1\HospitalManagement.Core.csprojAssemblyReference.cache
+G:\HospitalManagement(Cse370)\MySqlProject\HospitalManagement.Core\obj\Debug\netcoreapp3.1\HospitalManagement.Core.AssemblyInfoInputs.cache
+G:\HospitalManagement(Cse370)\MySqlProject\HospitalManagement.Core\obj\Debug\netcoreapp3.1\HospitalManagement.Core.AssemblyInfo.cs
+G:\HospitalManagement(Cse370)\MySqlProject\HospitalManagement.Core\obj\Debug\netcoreapp3.1\HospitalManagement.Core.csproj.CopyComplete
+G:\HospitalManagement(Cse370)\MySqlProject\HospitalManagement.Core\obj\Debug\netcoreapp3.1\HospitalManagement.Core.dll
+G:\HospitalManagement(Cse370)\MySqlProject\HospitalManagement.Core\obj\Debug\netcoreapp3.1\HospitalManagement.Core.pdb
+G:\HospitalManagement(Cse370)\MySqlProject\HospitalManagement.Core\obj\Debug\netcoreapp3.1\HospitalManagement.Core.csproj.CoreCompileInputs.cache

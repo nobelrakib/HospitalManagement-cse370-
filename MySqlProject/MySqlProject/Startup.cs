@@ -14,6 +14,14 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MySqlProject.Data.Migrations;
 using MySqlProject.Models;
+using HospitalManagement.Core.Contexts;
+using HospitalManagement.Core.Service;
+using HospitalManagement.Core.Repositories;
+using HospitalManagement.Core.UnitOfWork;
+using HospitalManagement.Data;
+using Autofac;
+using HospitalManagement.Core;
+using Autofac.Extensions.DependencyInjection;
 
 namespace MySqlProject
 {
@@ -25,13 +33,32 @@ namespace MySqlProject
         }
 
         public IConfiguration Configuration { get; }
+        public static IServiceProvider container;
+        public static ILifetimeScope AutofacContainer { get; private set; }
 
+        public void ConfigureContainer(ContainerBuilder builder)
+        {
+            var connectionStringName = "DefaultConnection";
+            var connectionString = Configuration.GetConnectionString(connectionStringName);
+            var migrationAssemblyName = typeof(Startup).Assembly.FullName;
+            builder.RegisterModule(new HospitalModule(connectionString, migrationAssemblyName));
+        }
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<TestContext>(options =>
-                options.UseMySql(
-                    Configuration.GetConnectionString("DefaultConnection")));
+
+            var connectionStringName = "DefaultConnection";
+            var connectionString = Configuration.GetConnectionString(connectionStringName);
+            var migrationAssemblyName = typeof(Startup).Assembly.FullName;
+
+            services.AddDbContext<HospitalContext>(options =>
+                options.UseMySql(Configuration.GetConnectionString(connectionStringName), b => b.MigrationsAssembly(migrationAssemblyName)));
+
+            //services.AddDbContext<HospitalContext>(options =>
+            //   options.UseMySql(
+            //       Configuration.GetConnectionString("DefaultConnection")));
+
+
             services.AddDbContext<ApplicationDbContext>(options =>
                options.UseMySql(
                    Configuration.GetConnectionString("DefaultConnection")));
@@ -40,6 +67,13 @@ namespace MySqlProject
                .AddDefaultUI()
                .AddEntityFrameworkStores<ApplicationDbContext>()
                .AddDefaultTokenProviders();
+
+            //services.AddScoped<DbContext, HospitalContext>();
+            //services.AddScoped<IDoctorService, DoctorService>();
+            //services.AddScoped<IDepartmentService, DepartmentService>();
+            //services.AddScoped<IDoctorRepository, DoctorRepository>();
+            //services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            //services.AddScoped<IHospitalUnitOfWork, HospitalUnitOfWork>();
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
@@ -47,7 +81,9 @@ namespace MySqlProject
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-           
+            //container = app.ApplicationServices.CreateScope().ServiceProvider;
+            AutofacContainer = app.ApplicationServices.GetAutofacRoot();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -66,7 +102,7 @@ namespace MySqlProject
 
             app.UseAuthentication();
             app.UseAuthorization();
-
+            //SeedData.EnsurePopulated(app);
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

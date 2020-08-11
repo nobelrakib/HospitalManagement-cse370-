@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySqlProject", "MySqlProject\MySqlProject.csproj", "{9AE77F42-4254-4707-A4C1-C2F88F66A886}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalManagement.Data", "HospitalManagement.Data\HospitalManagement.Data.csproj", "{5F4EEEE7-3C54-4DC0-BD94-A42F93A1E3AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HospitalManagement.Data", "HospitalManagement.Data\HospitalManagement.Data.csproj", "{5F4EEEE7-3C54-4DC0-BD94-A42F93A1E3AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalManagement.Core", "HospitalManagement.Core\HospitalManagement.Core.csproj", "{59B4C2CF-9A13-4B4A-B9CD-FF11D3A343A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5F4EEEE7-3C54-4DC0-BD94-A42F93A1E3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F4EEEE7-3C54-4DC0-BD94-A42F93A1E3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F4EEEE7-3C54-4DC0-BD94-A42F93A1E3AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59B4C2CF-9A13-4B4A-B9CD-FF11D3A343A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59B4C2CF-9A13-4B4A-B9CD-FF11D3A343A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59B4C2CF-9A13-4B4A-B9CD-FF11D3A343A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59B4C2CF-9A13-4B4A-B9CD-FF11D3A343A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
