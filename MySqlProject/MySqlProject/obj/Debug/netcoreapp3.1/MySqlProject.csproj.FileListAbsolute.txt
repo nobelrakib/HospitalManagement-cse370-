@@ -282,3 +282,4 @@ G:\HospitalManagement(Cse370)\MySqlProject\MySqlProject\bin\Debug\netcoreapp3.1\
 G:\HospitalManagement(Cse370)\MySqlProject\MySqlProject\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Doctor\Index.cshtml.g.cs
 G:\HospitalManagement(Cse370)\MySqlProject\MySqlProject\obj\Debug\netcoreapp3.1\Razor\Views\Doctor\Index.cshtml.g.cs
 G:\HospitalManagement(Cse370)\MySqlProject\MySqlProject\obj\Debug\netcoreapp3.1\Razor\Views\Shared\SecondLayout.cshtml.g.cs
+G:\HospitalManagement(Cse370)\MySqlProject\MySqlProject\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\NavigationMenu\Default.cshtml.g.cs

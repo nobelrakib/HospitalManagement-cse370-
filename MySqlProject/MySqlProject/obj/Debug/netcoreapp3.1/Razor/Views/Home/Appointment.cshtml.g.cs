@@ -26,8 +26,15 @@ using MySqlProject.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "G:\HospitalManagement(Cse370)\MySqlProject\MySqlProject\Views\_ViewImports.cshtml"
+using MySqlProject.Infrustructure;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4ffd2ea326eaa530b87ce6b48cfc6234e6331a49", @"/Views/Home/Appointment.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c625dba9f5f96c36fc928a1dbbc061bdca50b987", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"981c93300f5eb4d406183ddc2b79c64ce746e286", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Appointment : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("action", new global::Microsoft.AspNetCore.Html.HtmlString("#"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -160,7 +167,7 @@ using MySqlProject.Models;
         <div class=""book-appointment"">
             <h4>Make an appointment</h4>
             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a498986", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a499184", async() => {
                 WriteLiteral("\r\n                <div class=\"left-agileits-w3layouts same\">\r\n                    <div class=\"gaps\">\r\n                        <p>Patient Name</p>\r\n                        <input type=\"text\" name=\"Patient Name\"");
                 BeginWriteAttribute("placeholder", " placeholder=\"", 4699, "\"", 4713, 0);
                 EndWriteAttribute();
@@ -194,7 +201,7 @@ using MySqlProject.Models;
                 BeginWriteAttribute("required", " required=\"", 5686, "\"", 5697, 0);
                 EndWriteAttribute();
                 WriteLiteral(">\r\n                    </div>\r\n                    <div class=\"gaps\">\r\n                        <p>Department</p>\r\n                        <select class=\"option\">\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a4912079", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a4912277", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
@@ -207,7 +214,7 @@ using MySqlProject.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a4913077", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a4913275", async() => {
                     WriteLiteral("Cardiology");
                 }
                 );
@@ -221,7 +228,7 @@ using MySqlProject.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a4914124", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a4914322", async() => {
                     WriteLiteral("Ophthalmology");
                 }
                 );
@@ -235,7 +242,7 @@ using MySqlProject.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a4915174", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a4915372", async() => {
                     WriteLiteral("Neurology");
                 }
                 );
@@ -249,7 +256,7 @@ using MySqlProject.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a4916220", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a4916418", async() => {
                     WriteLiteral("Psychology");
                 }
                 );
@@ -263,7 +270,7 @@ using MySqlProject.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a4917267", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a4917465", async() => {
                     WriteLiteral("Dermatology");
                 }
                 );
@@ -277,7 +284,7 @@ using MySqlProject.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                        </select>\r\n                    </div>\r\n                    <div class=\"gaps\">\r\n                        <p>Gender</p>\r\n                        <select class=\"option\">\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a4918520", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a4918718", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
@@ -290,7 +297,7 @@ using MySqlProject.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a4919518", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a4919716", async() => {
                     WriteLiteral("Male");
                 }
                 );
@@ -304,7 +311,7 @@ using MySqlProject.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a4920559", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ffd2ea326eaa530b87ce6b48cfc6234e6331a4920757", async() => {
                     WriteLiteral("Female");
                 }
                 );

@@ -17,19 +17,26 @@ namespace MySqlProject.Controllers
         {
             this.hospitalContext = hospitalContext;
         }
-        public IActionResult Index(int pageNumber=1)
-             => View(new DoctorListModel
-             {
-                 Doctors = hospitalContext.Doctors
-                   .OrderBy(d => d.Id)
-                   .Skip((pageNumber - 1) * pageSize)
-                   .Take(pageSize),
-                 PagingInfo = new PagingInfo
-                 {
-                     CurrentPage = pageNumber,
-                     ItemsPerPage = pageSize,
-                     TotalItems = hospitalContext.Doctors.Count()
-                 }
-             });
+        public IActionResult Index(string department, int pageNumber = 1)
+        {
+            string page = HttpContext.Request.Query["department"];
+            return View(new DoctorListModel
+            {
+                Doctors = hospitalContext.Doctors
+                  .Where(p => department == null || p.Department.Name == department)
+                    .OrderBy(d => d.Id)
+                    .Skip((pageNumber - 1) * pageSize)
+                    .Take(pageSize),
+                PagingInfo = new PagingInfo
+                {
+                    CurrentPage = pageNumber,
+                    ItemsPerPage = pageSize,
+                    TotalItems = department == null ?
+                         hospitalContext.Doctors.Count() :
+                         hospitalContext.Doctors.Where(e =>
+                             e.Department.Name == department).Count()
+                }
+            });
+        }
     }
 }

@@ -13,7 +13,8 @@ namespace MySqlProject.Models
     public class DoctorListModel
     {
         public IEnumerable<Doctor> Doctors { get; set; }
-        public PagingInfo PagingInfo { get; set; }       
-        
+        public PagingInfo PagingInfo { get; set; }
+        public string CurrentDepartment { get; set; }
+
     }
 }
