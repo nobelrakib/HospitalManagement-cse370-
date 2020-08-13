@@ -26,8 +26,15 @@ using MySqlProject.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "G:\HospitalManagement(Cse370)\MySqlProject\MySqlProject\Views\_ViewImports.cshtml"
+using MySqlProject.Infrustructure;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d6a5625cc8fb4476f348b0fe9041c550465d8bf9", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c625dba9f5f96c36fc928a1dbbc061bdca50b987", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"981c93300f5eb4d406183ddc2b79c64ce746e286", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ErrorViewModel>
     {
         #pragma warning disable 1998

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
@@ -15,9 +16,11 @@ namespace MySqlProject.Infrustructure
     public class PageLinkTagHelper : TagHelper
     {
         private IUrlHelperFactory urlHelperFactory;
-        public PageLinkTagHelper(IUrlHelperFactory helperFactory)
+        public IHttpContextAccessor httpContextAccessor;
+        public PageLinkTagHelper(IUrlHelperFactory helperFactory, IHttpContextAccessor httpContextAccessor)
         {
             urlHelperFactory = helperFactory;
+            this.httpContextAccessor = httpContextAccessor;
         }
         [ViewContext]
         [HtmlAttributeNotBound]
@@ -26,6 +29,10 @@ namespace MySqlProject.Infrustructure
         public PagingInfo PageModel { get; set; }
 
         public string PageAction { get; set; }
+
+        [HtmlAttributeName(DictionaryAttributePrefix = "page-url-")]
+        public Dictionary<string, object> PageUrlValues { get; set; }
+            = new Dictionary<string, object>();
 
         public bool PageClassesEnabled { get; set; } = false;
         public string PageClass { get; set; }
@@ -37,11 +44,15 @@ namespace MySqlProject.Infrustructure
         {
             IUrlHelper urlHelper = urlHelperFactory.GetUrlHelper(ViewContext);
             TagBuilder result = new TagBuilder("div");
+            string dept = httpContextAccessor.HttpContext.Request.Query["department"];
+            int k = 0;
             for (int i = 1; i <= PageModel.TotalPages; i++)
             {
                 TagBuilder tag = new TagBuilder("a");
-                tag.Attributes["href"] = urlHelper.Action(PageAction,
-                   new { pageNumber = i });
+                PageUrlValues["pageNumber"] = i;
+                PageUrlValues["department"] = dept;
+
+                tag.Attributes["href"] = urlHelper.Action(PageAction, PageUrlValues);
                 if (PageClassesEnabled)
                 {
                     tag.AddCssClass(PageClass);
