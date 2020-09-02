@@ -63,6 +63,11 @@ namespace HospitalManagement.Core.Service
         {
             return _hospitalUnitOfWork.DepartmentRepository.GetById(id);
         }
+
+        public IEnumerable<Department> GetDepartments()
+        {
+            return _hospitalUnitOfWork.DepartmentRepository.Get();
+        }
         public IEnumerable<Department> GetDepartments(
             int pageIndex,
             int pageSize,

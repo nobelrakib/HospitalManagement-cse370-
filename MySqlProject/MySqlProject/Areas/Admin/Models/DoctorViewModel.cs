@@ -1,4 +1,5 @@
-﻿using HospitalManagement.Core.Service;
+﻿using Autofac;
+using HospitalManagement.Core.Service;
 using HospitalManagement.Core.UnitOfWork;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,8 +21,7 @@ namespace MySqlProject.Areas.Admin.Models
         }
         public DoctorViewModel()
         {
-            _doctorService = _applicationBuilder.ApplicationServices
-                .CreateScope().ServiceProvider.GetRequiredService<IDoctorService>();
+            _doctorService = Startup.AutofacContainer.Resolve<IDoctorService>();
         }
         public object GetDoctors(DataTablesAjaxRequestModel tableModel)
         {
@@ -43,9 +43,10 @@ namespace MySqlProject.Areas.Admin.Models
                         select new string[]
                         {
                                 record.Name,
-                                record.Department?.Description,
+                                "/FrontEnd/images/"+record.ImageName,
+                                record.Department?.Name,
                                 record.Designation,
-                                record.Designation,
+                                record.Description,
                                 record.Id.ToString()
                         }
                     ).ToArray()

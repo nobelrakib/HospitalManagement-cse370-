@@ -38,6 +38,9 @@ namespace HospitalManagement.Core.Service
             {
                 var oldDoctor = _hospitalUnitOfWork.DoctorRepository.GetById(doctor.Id);
                 oldDoctor.Name = doctor.Name;
+                oldDoctor.ImageName = doctor.ImageName;
+                oldDoctor.DepartmentId = doctor.DepartmentId;
+                oldDoctor.Description = doctor.Description;
                 _hospitalUnitOfWork.Save();
             }
             catch (Exception ex)
