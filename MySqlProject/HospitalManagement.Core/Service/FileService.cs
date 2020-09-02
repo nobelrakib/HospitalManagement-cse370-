@@ -19,7 +19,7 @@ namespace HospitalManagement.Core.Service
         public void SaveFile(IFormFile file)
         {
             var name = RandomName();
-            var save_path = Path.Combine(_env.WebRootPath + "\\upload", name);
+            var save_path = Path.Combine(_env.WebRootPath + "\\FrontEnd\\images", name);
             FileName = name;
             using (var fileStream = new FileStream(save_path, FileMode.Create, FileAccess.Write))
             {

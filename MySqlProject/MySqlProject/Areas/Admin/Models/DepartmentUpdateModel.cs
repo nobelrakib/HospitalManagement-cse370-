@@ -17,14 +17,12 @@ namespace MySqlProject.Areas.Admin.Models
         public string Name { get; set; }
         public string Description { get; set; }
         private IDepartmentService _departmentService;
-       // private IApplicationBuilder _applicationBuilder=new ApplicationBuilder();
         private IServiceProvider _serviceProvider;
         public DepartmentUpdateModel()
        {
 
-            _departmentService = Startup.AutofacContainer.Resolve<IDepartmentService>();//Startup.container.GetRequiredService<IDepartmentService>(); //_applicationBuilder.ApplicationServices
-            // .CreateScope().ServiceProvider.GetRequiredService<IDepartmentService>();
-            //_serviceProvider=
+            _departmentService = Startup.AutofacContainer.Resolve<IDepartmentService>();
+            
         }
         public DepartmentUpdateModel(IDepartmentService departmentService)
         {

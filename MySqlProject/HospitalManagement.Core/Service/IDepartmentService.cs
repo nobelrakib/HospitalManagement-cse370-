@@ -11,6 +11,7 @@ namespace HospitalManagement.Core.Service
         void EditDepartment(Department department);
         void DeleteDepartment(int id);
         Department GetDepartment(int id);
+        IEnumerable<Department> GetDepartments();
         IEnumerable<Department> GetDepartments(
             int pageIndex,
             int pageSize,
