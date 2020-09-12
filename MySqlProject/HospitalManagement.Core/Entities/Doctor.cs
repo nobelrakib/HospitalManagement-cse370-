@@ -13,5 +13,6 @@ namespace HospitalManagement.Core.Entities
         public string ImageName { get; set; }
         public Department Department { get; set; }
         public int DepartmentId { get; set; }
+        public IList<Appointment> Appointments { get; set; }
     }
 }

@@ -111,68 +111,87 @@
                         </li>
 
 
-                        @*<li class="nav-item has-treeview">
+                        <li class="nav-item has-treeview">
                             <a href="#" class="nav-link">
                                 <i class="fas fa-chalkboard-teacher"></i>
                                 <p>
-                                    &nbsp;&nbsp;User
+                                    &nbsp;&nbsp;Doctor Module
                                     <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="~/admin/User/index" class="nav-link">
+                                    <a href="~/admin/Doctor/index" class="nav-link">
                                         <i class="fas fa-users nav-icon"></i>
-                                        <p>Users</p>
+                                        <p>Doctors</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="~/admin/User/add" class="nav-link">
+                                    <a href="~/admin/Doctor/add" class="nav-link">
                                         <i class="fas fa-user-plus nav-icon"></i>
-                                        <p>Register User</p>
+                                        <p>Add Doctor</p>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-copy"></i>
+                                <p>
+                                    Department Module
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="/Admin/Department/Index" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Departments</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="~/admin/Role/add" class="nav-link">
-                                        <i class="fas fa-user-plus nav-icon"></i>
-                                        <p>Add Role</p>
+                                    <a href="/Admin/Department/Add" class="nav-link">
+                                        <i class="far fa-plus nav-icon"></i>
+                                        <p>Add Departments</p>
                                     </a>
                                 </li>
                             </ul>
-                        </li>*@
-                        @*<li class="nav-item has-treeview">
-                                <a href="#" class="nav-link">
-                                    <i class="nav-icon fas fa-copy"></i>
-                                    <p>
-                                        Roles
-                                        <i class="fas fa-angle-left right"></i>
-                                    </p>
-                                </a>
-                                <ul class="nav nav-treeview">
-                                    <li class="nav-item">
-                                        <a href="/Admin/Role/Index" class="nav-link">
-                                            <i class="far fa-circle nav-icon"></i>
-                                            <p>View Roles</p>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="/Admin/Role/Add" class="nav-link">
-                                            <i class="far fa-plus nav-icon"></i>
-                                            <p>Add Roles</p>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>*@
+                        </li>
 
-
-                        @*<li class="nav-item has-treeview">
-                            <a class="nav-link">
-                                <form class="form-inline" method="post" action="@Url.Action("Logout", "Account")">
-                                    <i class="fas fa-sign-out-alt"></i>
-                                    <input type="submit" class="nav-link btn btn-link text-white" value="Logout" />
-                                </form>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-copy"></i>
+                                <p>
+                                    Drug Module
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
                             </a>
-                        </li>*@
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="/Admin/Drug/Index" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Drugs</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="/Admin/Drug/Add" class="nav-link">
+                                        <i class="far fa-plus nav-icon"></i>
+                                        <p>Add Drugs</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        @*<li class="nav-item has-treeview">
+            <a class="nav-link">
+                <form class="form-inline" method="post" action="@Url.Action("Logout", "Account")">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <input type="submit" class="nav-link btn btn-link text-white" value="Logout" />
+                </form>
+            </a>
+        </li>*@
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->

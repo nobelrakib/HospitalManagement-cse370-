@@ -52,8 +52,11 @@ namespace HospitalManagement.Core
             builder.RegisterType<FileService>()
                .InstancePerLifetimeScope();
 
-            builder.RegisterType<DepartmentRepository>().As<IDepartmentRepository>()
+            builder.RegisterType<DrugRepository>().As<IDrugRepository>()
                 .InstancePerLifetimeScope();
+            builder.RegisterType<DrugService>().As<IDrugService>()
+               .InstancePerLifetimeScope();
+
 
             base.Load(builder);
         }

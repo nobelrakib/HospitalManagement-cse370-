@@ -11,5 +11,6 @@ namespace HospitalManagement.Core.UnitOfWork
     {
        IDoctorRepository DoctorRepository { get; set; }
        IDepartmentRepository DepartmentRepository { get; set; }
+       IDrugRepository DrugRepository { get; set; }
     }
 }

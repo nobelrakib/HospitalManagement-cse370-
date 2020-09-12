@@ -61,6 +61,26 @@ namespace MySqlProject.Migrations
                     b.ToTable("Doctors");
                 });
 
+            modelBuilder.Entity("HospitalManagement.Core.Entities.Drug", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("ImageName")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Drugs");
+                });
+
             modelBuilder.Entity("HospitalManagement.Core.Entities.Doctor", b =>
                 {
                     b.HasOne("HospitalManagement.Core.Entities.Department", "Department")

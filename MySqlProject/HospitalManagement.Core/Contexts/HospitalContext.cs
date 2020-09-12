@@ -47,10 +47,15 @@ namespace HospitalManagement.Core.Contexts
              .WithOne(d => d.Department)
              .HasForeignKey(d => d.DepartmentId);
             //.OnDelete(DeleteBehavior.SetNull);
+            //builder.Entity<Doctor>()
+            // .HasMany<Appointment>(a=> a.Appointments)
+            // .WithOne(d => d.Doctor)
+            // .HasForeignKey(d => d.DoctorId);
 
             base.OnModelCreating(builder);
         }
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet<Department> Departments { get; set; }
+        public DbSet<Drug> Drugs { get; set; }
     }
 }
